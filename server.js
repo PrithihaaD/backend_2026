@@ -31,7 +31,9 @@ const studentSchema = new mongoose.Schema({
 /* ---------------- MODEL ---------------- */
 
 const Student = mongoose.model("Student", studentSchema);
-
+app.get("/", (req, res) => {
+    res.send("Backend Running Successfully");
+});
 /* ================================================= */
 /* ==================== CRUD ======================= */
 /* ================================================= */

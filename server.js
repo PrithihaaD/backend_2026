@@ -120,6 +120,8 @@ app.delete("/student/:id", async (req, res) => {
 
 /* ---------------- SERVER ---------------- */
 
-app.listen(6000, () => {
-    console.log("Server running on http://localhost:6000");
+const PORT = process.env.PORT || 6000;
+
+app.listen(PORT, () => {
+    console.log(`Server running on port ${PORT}`);
 });
